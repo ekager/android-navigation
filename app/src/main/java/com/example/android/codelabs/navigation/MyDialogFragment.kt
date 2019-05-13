@@ -21,7 +21,7 @@ class MyDialogFragment : DialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         val button = view.findViewById<Button>(R.id.navigate_from_dialog)
         button.setOnClickListener {
-            findNavController().navigate(R.id.flow_step_one_dest, null)
+            findNavController().navigate(MyDialogFragmentDirections.actionDialogFragmentToFlowStepOneDest())
         }
     }
 }
